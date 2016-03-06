@@ -8,6 +8,8 @@
 #ifndef RAMFILE_H_
 #define RAMFILE_H_
 
+#include "/usr/include/hiredis/hiredis.h"
+
 int redis();
 void redisSig(int);
 

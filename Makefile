@@ -15,9 +15,9 @@ CFLAGS  = -O3 -Wall -finline-functions
 #CFLAGS += -Werror
 CFLAGS += -DMALLOC_TRACE
 
-#INCLUDE += -I../linda/
+INCLUDE += -I/usr/include/hiredis
 
-LIBS += -lrt -lpq
+LIBS += -lrt -lpq -lhiredis
 #INCLUDE += `pkg-config --cflags glib-2.0`
 #INCLUDE += `pkg-config --cflags libxml-2.0`
 
