@@ -25,7 +25,7 @@ LIBS += -lrt -lpq -lhiredis
 #LDFLAGS += `pkg-config --libs libxml-2.0`
 
 RM      = rm -f
-PROG    = ramfile
+PROG    = Ramfile
 
 
 all: $(PROG)  

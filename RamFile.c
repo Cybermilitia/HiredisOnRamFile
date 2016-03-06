@@ -35,8 +35,18 @@ void redisSig(int sig)
 int redis()
 {
 	char * insert_command;
+	redisContext baglam;
+	baglam = redisConnect("127.0.0.1", 6379);
+	if (baglam == NULL)
+	{
+		printf("Baglanamadi!");
+	}
+	else
+	{
+		printf("Baglandi!");
 
-	insert_command = malloc(sizeof(1024));
+	}
+/*	insert_command = malloc(sizeof(1024));
 	sprintf(insert_command,
 			"INSERT INTO \"NODE-software\" VALUES (%s, '%s', '%s', '%s', '%s', '%s', \
 			'%s', '%s','%s', '%s', %d, \
@@ -53,7 +63,7 @@ int redis()
 	if(resultPtr != NULL)
 	{
 		free(resultPtr);
-	}
+	}*/
 	return 1;
 }
 
